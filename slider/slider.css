@@ -1,0 +1,127 @@
+/* Slider container */
+.slider-innerblocks-section {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Slider item */
+.slider-item-innerBlock {
+  flex: 0 0 100%;
+  min-width: 100%;
+  height: 400px; /* Adjust as needed */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+/* Content wrapper inside slider item */
+.slider-item-innerBlock-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+  max-width: 80%;
+}
+
+/* Style for headings inside slider item */
+.slider-item-innerBlock-content h2 {
+  font-size: 2.5em;
+  margin-bottom: 15px;
+}
+
+/* Style for paragraphs inside slider item */
+.slider-item-innerBlock-content p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+/* Style for buttons inside slider item */
+.slider-item-innerBlock-content .wp-block-button__link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.slider-item-innerBlock-content .wp-block-button__link:hover {
+  background-color: #0056b3;
+}
+
+/* Navigation arrows */
+.slider-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2em;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.slider-arrow-prev {
+  left: 10px;
+}
+
+.slider-arrow-next {
+  right: 10px;
+}
+
+/* Navigation dots */
+.slider-dots {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.slider-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
+
+.slider-dot.active {
+  background-color: #fff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .slider-item-innerBlock {
+    height: 300px;
+  }
+
+  .slider-item-innerBlock-content h2 {
+    font-size: 2em;
+  }
+
+  .slider-item-innerBlock-content p {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .slider-item-innerBlock {
+    height: 250px;
+  }
+
+  .slider-item-innerBlock-content h2 {
+    font-size: 1.5em;
+  }
+
+  .slider-item-innerBlock-content p {
+    font-size: 0.9em;
+  }
+}

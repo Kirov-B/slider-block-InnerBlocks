@@ -1,0 +1,19 @@
+{
+  "name": "acf/sliderinnerblocks",
+  "title": "Slider Inner Blocks",
+  "description": "A custom slider block with inner blocks",
+  "style": ["file:./slider.css", "slick", "slick-theme"],
+  "script": ["file:./slider.js"],
+  "category": "media",
+  "icon": "images-alt2",
+  "keywords": ["slider", "slideshow", "carousel"],
+  "supports": {
+    "anchor": true,
+    "jsx": true
+  },
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "slider.php"
+  },
+  "align": "full"
+}
