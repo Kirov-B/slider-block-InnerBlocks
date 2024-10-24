@@ -70,7 +70,7 @@ $template = array(
 
 $backgroundimage = get_field('background_image');
 if (!$backgroundimage) {
-    $backgroundimage = 'https://via.placeholder.com/1920x1080';
+    $backgroundimage = 'https://placehold.co/1920x1080';
 }
 ?>
 <div <?php echo $anchor; ?>>

@@ -5,6 +5,7 @@
  * Description:       A custom block for creating sliders with InnerBlocks.
  * Version:           1.0.0
  * Author:            Bone Kirov
+ * Requires Plugins:   advanced-custom-fields-pro
  *
  * @package           slider-block-innerBlocks
  */
@@ -77,4 +78,6 @@ function digicube_innerblocks_slider_register_scripts()
 
 
 }
-add_action('enqueue_block_assets', 'digicube_innerblocks_slider_register_scripts');
+
+
+require_once plugin_dir_path(__FILE__) . 'fields/fields.php';

@@ -21,7 +21,6 @@
       .find(".slider-innerblocks")
       .find(".acf-innerblocks-container")
       .first();
-    console.log(slider);
     if (slider.hasClass("slick-initialized")) {
       return;
     }
